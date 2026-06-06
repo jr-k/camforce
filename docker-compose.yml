@@ -1,0 +1,18 @@
+services:
+  camforce:
+    build: .
+    image: camforce:latest
+    container_name: camforce
+    # network_mode: host gives the container direct access to your LAN so it
+    # can reach cameras on 192.168.x.x without NAT mangling. Linux only.
+    # On macOS / Windows: comment out network_mode and let Docker bridge
+    # NAT outbound to the LAN (works for most setups).
+    network_mode: host
+    volumes:
+      - ./config.yaml:/app/config.yaml:ro
+      # Mount the host's vendors folder on top of the one baked into the
+      # image. Lets you add or override presets without rebuilding.
+      - ./vendors:/app/vendors:ro
+    # Default command: run against the mounted config. Override at run-time
+    # with: docker compose run --rm camforce --host 192.168.1.10 -u admin -p ...
+    command: ["-c", "/app/config.yaml"]

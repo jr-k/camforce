@@ -1,0 +1,5 @@
+# Geovision RTSP paths.
+# Note: CAM_ID / password / user / pin are placeholders that some
+# firmwares accept literally; substitute them in your config if needed.
+/CAM_ID.password.mp2	Geovision CAM_ID.password.mp2
+/user.pin.mp2	Geovision user.pin.mp2

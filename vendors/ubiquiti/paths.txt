@@ -1,0 +1,5 @@
+# Ubiquiti UVC / UniFi RTSP paths.
+# Format: <path>[<TAB><label>]. Label is optional, auto-generated otherwise.
+/s0	Ubiquiti main s0
+/s1	Ubiquiti sub s1
+/s2	Ubiquiti extra s2

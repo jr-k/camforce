@@ -1,0 +1,2 @@
+# Foscam RTSP paths.
+/videoMain	Foscam videoMain

@@ -1,0 +1,11 @@
+# Sony (SNC) RTSP paths.
+/media/video1	Sony media video1
+/media/video2	Sony media video2
+/media/video3	Sony media video3
+/video1	Sony video1
+/video1+audio1	Sony video1 + audio1
+/video.pro1	Sony profile 1
+/video.pro2	Sony profile 2
+/video.pro3	Sony profile 3
+/image.jpg	Sony snapshot
+/Image.jpg	Sony snapshot (capital)

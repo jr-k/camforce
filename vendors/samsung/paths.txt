@@ -1,0 +1,5 @@
+# Samsung / Hanwha Wisenet RTSP paths.
+/profile	Samsung profile
+/mjpeg/media.smp	Samsung MJPEG media.smp
+/mpeg4/media.smp	Samsung MPEG-4 media.smp
+/onvif/live/2	Samsung ONVIF profile 2

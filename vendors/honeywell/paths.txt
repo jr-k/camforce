@@ -1,0 +1,8 @@
+# Honeywell / IDIS / Microdigital RTSP paths.
+/HighResolutionVideo	Honeywell high-res
+/HighResolutionvideo	Honeywell high-res (lowercase v)
+/LowResolutionVideo	Honeywell low-res
+/now.mp4	Honeywell now.mp4
+/dms.jpg	Honeywell dms snapshot
+/dms?nowprofileid=2	Honeywell dms profile 2
+/ipcam/stream.cgi?nowprofileid=2	Honeywell ipcam stream profile 2

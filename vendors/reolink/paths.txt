@@ -1,0 +1,5 @@
+# Reolink RTSP paths.
+/h264Preview_01_main	Reolink H264 main
+/h264Preview_01_sub	Reolink H264 sub
+/h265Preview_01_main	Reolink H265 main
+/h265Preview_01_sub	Reolink H265 sub

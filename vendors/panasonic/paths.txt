@@ -1,0 +1,8 @@
+# Panasonic / i-Pro RTSP paths.
+/MediaInput/h264	Panasonic H.264
+/MediaInput/h264/stream_1	Panasonic H.264 stream 1
+/MediaInput/mpeg4	Panasonic MPEG-4
+/nphMpeg4/g726-640x	Panasonic nphMpeg4 g726-640x
+/nphMpeg4/g726-640x480	Panasonic nphMpeg4 g726-640x480
+/nphMpeg4/nil-320x240	Panasonic nphMpeg4 nil-320x240
+/nph-h264.cgi	Panasonic nph-h264.cgi

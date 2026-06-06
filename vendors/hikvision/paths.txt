@@ -1,0 +1,17 @@
+# Hikvision / HiLook / PSIA-compatible RTSP paths.
+/Streaming/Channels/101	Hikvision channel 1 main
+/Streaming/Channels/102	Hikvision channel 1 sub
+/Streaming/Channels/103	Hikvision channel 1 third
+/Streaming/Channels/1	Hikvision channel 1 (short)
+/Streaming/Channels/2	Hikvision channel 2 (short)
+/Streaming/channels/101	Hikvision channel 1 main (lowercase)
+/Streaming/Unicast/channels/101	Hikvision channel 1 unicast
+/PSIA/Streaming/channels/0?videoCodecType=H.264	Hikvision PSIA channel 0 H.264
+/PSIA/Streaming/channels/1	Hikvision PSIA channel 1
+/PSIA/Streaming/channels/1?videoCodecType=MPEG4	Hikvision PSIA channel 1 MPEG-4
+/PSIA/Streaming/channels/h264	Hikvision PSIA H.264
+/ROH/channel/11	Hikvision NVR ROH channel 11
+/h264/ch1/sub/	Hikvision ch1 sub
+/CH001.sdp	Hikvision CH001.sdp
+/ch001.sdp	Hikvision ch001.sdp
+/ch01.264	Hikvision ch01.264

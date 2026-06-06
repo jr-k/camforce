@@ -1,0 +1,11 @@
+# Vivotek RTSP paths.
+/live.sdp	Vivotek live
+/live1.sdp	Vivotek live1
+/live2.sdp	Vivotek live2
+/live3.sdp	Vivotek live3
+/live_h264.sdp	Vivotek live H.264
+/live_mpeg4.sdp	Vivotek live MPEG-4
+/play1.sdp	Vivotek play1
+/play2.sdp	Vivotek play2
+/rtpvideo1.sdp	Vivotek RTP video 1
+/cgi-bin/viewer/video.jpg?resolution=640x480	Vivotek viewer snapshot

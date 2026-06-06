@@ -1,0 +1,33 @@
+config.yaml
+
+# Vendors: only the presets shipped with camforce are tracked.
+# Any other <brand>/ folder dropped into vendors/ is treated as a
+# user-supplied preset and stays local.
+vendors/*
+!vendors/ubiquiti/
+!vendors/hikvision/
+!vendors/dahua/
+!vendors/reolink/
+!vendors/axis/
+!vendors/foscam/
+!vendors/generic/
+!vendors/vivotek/
+!vendors/panasonic/
+!vendors/samsung/
+!vendors/sony/
+!vendors/trendnet/
+!vendors/dlink/
+!vendors/bosch/
+!vendors/pelco/
+!vendors/honeywell/
+!vendors/geovision/
+!vendors/README.md
+
+# Python / build artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/

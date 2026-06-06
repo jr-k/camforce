@@ -1,0 +1,12 @@
+# Axis RTSP paths.
+/axis-media/media.amp	Axis live
+/axis-media/media.amp?videocodec=h264&resolution=640x480	Axis H.264 640x480
+/media.amp	Axis legacy media.amp
+/media/media.amp	Axis media/media.amp
+/onvif-media/media.amp	Axis ONVIF media.amp
+/h264/media.amp	Axis H.264 media.amp
+/mpeg4/media.amp	Axis MPEG-4 media.amp
+/mpeg4/media.amp?resolution=640x480	Axis MPEG-4 640x480
+/mpeg4/1/media.amp	Axis MPEG-4 channel 1
+/mpg4/rtsp.amp	Axis MPG4 rtsp.amp
+/1.AMP	Axis legacy 1.AMP

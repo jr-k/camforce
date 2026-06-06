@@ -1,0 +1,10 @@
+# D-Link RTSP paths.
+/img/video.asf	D-Link video.asf
+/img/media.sav	D-Link media.sav
+/img/video.sav	D-Link video.sav
+/video.mjpg	D-Link video.mjpg
+/video/mjpg.cgi	D-Link mjpg.cgi
+/MJPEG.cgi	D-Link MJPEG.cgi
+/mpeg4cif	D-Link MPEG-4 CIF
+/mpeg4unicast	D-Link MPEG-4 unicast
+/Video?Codec=MPEG4&Width=720&Height=576&Fps=30	D-Link MPEG-4 720x576

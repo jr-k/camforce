@@ -1,0 +1,4 @@
+# Bosch RTSP paths.
+/rtsp_tunnel	Bosch RTSP tunnel
+/VideoInput/1/h264/1	Bosch H.264 video input 1
+/videoinput_1:0/h264_1/onvif.stm	Bosch ONVIF H.264 stream

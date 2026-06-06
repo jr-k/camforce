@@ -1,0 +1,7 @@
+# TRENDnet RTSP paths.
+/cam1/h264	TRENDnet cam1 H.264
+/cam1/h264/multicast	TRENDnet cam1 H.264 multicast
+/cam1/mjpeg	TRENDnet cam1 MJPEG
+/cam1/mpeg4	TRENDnet cam1 MPEG-4
+/cam1/onvif-h264	TRENDnet cam1 ONVIF H.264
+/cam4/mpeg4	TRENDnet cam4 MPEG-4

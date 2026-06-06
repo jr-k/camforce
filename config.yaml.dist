@@ -1,0 +1,78 @@
+# camforce configuration. Copy to config.yaml then adapt.
+#
+# Each entry under `instances` is one camera/NVR to probe.
+# Required per instance: host.
+# Optional per instance: name, port, timeout, workers, username, password,
+#                        credentials, vendors_presets, well_known, paths.
+#
+# username / password:
+#   Optional baseline credential. If both are set, they are tested first
+#   against every path. Must be provided together (or both omitted).
+#
+# credentials:
+#   Ad-hoc credential dictionary tested against every path, in addition
+#   to vendor preset credentials. Two equivalent forms are accepted:
+#     credentials:
+#       admin: changeme
+#       root: ""
+#   or, mirroring vendors/<brand>/credentials.txt:
+#     credentials:
+#       - admin:changeme
+#       - root:
+#
+# vendors_presets:
+#   Map "vendor -> bool". The vendor name matches a subfolder of vendors/,
+#   e.g. vendors/ubiquiti/. When set to true, that vendor's paths are
+#   tested AND its credentials are tried in addition to the per-instance
+#   user/password.
+#   Omitting vendors_presets entirely means "no restriction": every
+#   vendor's paths are tested against every vendor's credentials
+#   (equivalent to well_known: true).
+#   Built-in: ubiquiti, hikvision, dahua, reolink, axis, foscam, generic,
+#             vivotek, panasonic, samsung, sony, trendnet, dlink, bosch,
+#             pelco, honeywell, geovision.
+#
+# well_known:
+#   Global toggle. Try every preset's credentials against every path,
+#   even when vendors_presets restricts the path catalog to a subset.
+
+instances:
+  # Plain camera: probe the full catalog with the supplied credentials.
+  - name: "Salon"
+    host: 192.168.1.10
+    port: 554
+    username: admin
+    password: changeme
+
+  # Ubiquiti: restrict to the ubiquiti preset (its paths + factory creds).
+  - name: "Garage"
+    host: cam-garage.lan
+    username: ubnt
+    password: changeme
+    vendors_presets:
+      ubiquiti: true
+
+  # No baseline user/password; rely on an ad-hoc dictionary plus the
+  # ubiquiti preset's factory credentials.
+  - name: "Entree"
+    host: cam-entree.lan
+    credentials:
+      admin: ""
+    vendors_presets:
+      ubiquiti: true
+
+  # Multi-vendor NVR with extra custom paths and a security audit pass.
+  - name: "NVR"
+    host: nvr.example.com
+    port: 5542
+    username: viewer
+    password: changeme
+    timeout: 15
+    workers: 32
+    well_known: true
+    vendors_presets:
+      hikvision: true
+      dahua: true
+    paths:
+      - /Streaming/Channels/201
+      - /cam/realmonitor?channel=2&subtype=0

@@ -1,0 +1,121 @@
+# Generic catch-all RTSP paths used by many cheap or unbranded cameras,
+# plus path templates extracted from nmap's rtsp-url-brute script.
+/stream1	Generic stream1
+/stream2	Generic stream2
+/live	Generic live
+/live0	Generic live0
+/live1	Generic live1
+/main	Generic main
+/sub	Generic sub
+/mainstream	Generic mainstream
+/substream	Generic substream
+/profile1	Generic profile1
+/profile2	Generic profile2
+/videoSub	Generic videoSub
+/ch0_0.h264	Generic ch0_0.h264
+/ch0_1.h264	Generic ch0_1.h264
+
+# Numeric NVR channels.
+/0	Generic 0
+/0/video1	Generic 0/video1
+/1	Generic 1
+/1/1:1/main	Generic 1/1:1/main
+/1/cif	Generic 1/cif
+/1/stream1	Generic 1/stream1
+/11	Generic 11
+/12	Generic 12
+/4	Generic 4
+
+# Short ch / cam variants.
+/ch0	Generic ch0
+/ch0.h264	Generic ch0.h264
+/cam	Generic cam
+/cam0_0	Generic cam0_0
+/cam0_1	Generic cam0_1
+
+# Indexed audio/video pseudo-channels.
+/av0_0	Generic av0_0
+/av0_1	Generic av0_1
+/av2	Generic av2
+/avn=2	Generic avn=2
+/tcp/av0_0	Generic tcp/av0_0
+
+# Live family (cheap-camera firmwares).
+/livestream	Generic livestream
+/livestream/	Generic livestream/
+/live/av0	Generic live/av0
+/live/ch0	Generic live/ch0
+/live/ch00_0	Generic live/ch00_0
+/live/ch00_1	Generic live/ch00_1
+/live/ch1	Generic live/ch1
+/live/ch2	Generic live/ch2
+/live/h264	Generic live/h264
+/live/mpeg4	Generic live/mpeg4
+/live0.264	Generic live0.264
+/live1.264	Generic live1.264
+
+# Codec-tagged short paths.
+/h264	Generic h264
+/H264	Generic H264 (uppercase)
+/h264.sdp	Generic h264.sdp
+/h264_vga.sdp	Generic h264 VGA SDP
+/mp4	Generic mp4
+/mpeg4	Generic mpeg4
+/rtsph264	Generic rtsph264
+/rtsph2641080p	Generic rtsph264 1080p
+
+# IPCAM SDP.
+/ipcam.sdp	Generic ipcam.sdp
+/ipcam_h264.sdp	Generic ipcam_h264.sdp
+
+# ONVIF probes.
+/ONVIF/MediaInput	Generic ONVIF MediaInput
+/ONVIF/channel1	Generic ONVIF channel1
+/onvif1	Generic onvif1
+/onvif2	Generic onvif2
+/channel1	Generic channel1
+
+# Media / video generic endpoints.
+/media	Generic media
+/medias1	Generic medias1
+/video	Generic video
+/video.3gp	Generic video.3gp
+/video.cgi	Generic video.cgi
+/video.cgi?resolution=VGA	Generic video.cgi VGA
+/video.cgi?resolution=vga	Generic video.cgi vga
+/video.h264	Generic video.h264
+/video.mp4	Generic video.mp4
+/video2.mjpg	Generic video2.mjpg
+/videostream.cgi?rate=0	Generic videostream.cgi rate=0
+/camera.stm	Generic camera.stm
+
+# Snapshot / MJPEG CGIs.
+/GetData.cgi	Generic GetData.cgi
+/image/jpeg.cgi	Generic image/jpeg.cgi
+/image.mpg	Generic image.mpg
+/jpg/image.jpg?size=3	Generic jpg snapshot
+/mjpeg.cgi	Generic mjpeg.cgi
+/streaming/mjpeg	Generic streaming/mjpeg
+/ioImage/1	Generic ioImage/1
+
+# Multicast / unicast variants.
+/multicaststream	Generic multicaststream
+/ucast/11	Generic ucast/11
+/unicast/c1/s1/live	Generic unicast c1 s1 live
+
+# Misc weak labels.
+/wfov	Generic wfov
+/vis	Generic vis
+
+# XMEye / Sricam style URL with credentials baked in.
+/user=admin_password=tlJwpbo6_channel=1_stream=0.sdp?real_stream	XMEye baked-in creds
+
+# Templates / placeholders extracted from nmap rtsp-url-brute.
+# These are not real paths on most cameras but kept here on purpose so
+# we still probe them as a sanity check.
+/Possible	Nmap placeholder Possible
+/access_code	Nmap placeholder access_code
+/access_name_for_stream_1_to_5	Nmap placeholder access_name
+/user_defined	Nmap placeholder user_defined
+/recognizer	Nmap placeholder recognizer
+/synthesizer	Nmap placeholder synthesizer

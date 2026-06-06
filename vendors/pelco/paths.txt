@@ -1,0 +1,3 @@
+# Pelco RTSP paths.
+/ch0_unicast_firststream	Pelco channel 0 first stream
+/ch0_unicast_secondstream	Pelco channel 0 second stream
